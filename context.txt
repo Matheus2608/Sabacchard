@@ -1,0 +1,18 @@
+Sabacchard
+In the Imperial Age, one of the most obscure games played on Numidian Prime is Sabacchard, a variation on the common card game Sabacc, the one in which Lando lost a Millennium 
+Falcon. The Sabacchard works like this: given a sequence of cards with values in a specific order, alternately the player first chooses a card from the ends to score and then 
+chooses another card (also from the ends) to discard. The player continues with this process of scoring and then discarding, until there are no more cards. The player's final 
+score is the total points accumulated at the end of the process and if this value is not the maximum possible, the player loses.
+
+So, Lando asked for your help to help him try to recover the damage for the lost ship, counting a program to calculate what maximum score the player should reach, given a deal of cards for the game.
+
+Obs: Not always a strategy where you always choose the highest card to score leads to the lowest result (as per example 2). Thus, it is necessary to think of a solution strategy where 
+all the various varieties of card choices are tested (suggestion: recursion). Lastly, once the correct solution is reached, there is a possibility that the runtime will not be 
+enough to pass in all cases. Thus, an optimization using dynamics will be necessary.
+
+Input
+The entry contains 2 lines. The first line contains an even integer n where 1 <n <101. The second line contains n integers, separated by spaces, that represent the value of each letter.
+
+Output
+The output must contain an integer, whose value represents the maximum possible value to be achieved in the round.
+
